@@ -1,203 +1,87 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beans & Brews</title>
-
-  <style>
-    body {
-      font: 18px Tahoma;
-      line-height: 1.5;
-      margin: 0;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 0;
-      border-bottom: 5px solid #7f2602;
-    }
-    main {
-      background-color: #fff8ea;
-      padding: 3rem 0;
-    }
-    footer {
-      border-top: 5px solid #7f2602;
-      text-align: center;
-      padding: 24px 0;
-    }
-    h1, h2, h3 {
-      color: #7f2602;
-      line-height: 1.2;
-    }
-
-    header ul {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    header ul li:not(:last-child) {
-      margin-right: 1rem;
-    }
-    header ul li a {
-      color: #0b908d;
-    }
-    .logo {
-      margin-bottom: 2rem;
-    }
-    .about {
-      padding: 1.5rem;
-      max-width: 768px;
-      margin: 0 auto;
-    }
-    .menu {
-      max-width: 1280px;
-      margin: 0 auto 3rem;
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-    .menu ul {
-      display: grid;
-      grid-template: auto / auto;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      gap: 1rem;
-    }
-    .menu ul li {
-      background-color: #ffffff;
-      padding: 1rem;
-      border: 1px solid #e5d6b8;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 3px 6px rgba(0,0,0,.15);
-    }
-    .menu ul li img {
-      display: block;
-      max-width: 100%;
-    }
-
-    .price {
-      font-weight: bold;
-      font-size: 20px;
-      text-align: center;
-      display: block;
-      margin-bottom: 2rem;
-    }
-
-    .purchase {
-      background-color: #0b908d;
-      color: #ffffff;
-      cursor: pointer;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      padding: 16px;
-      transition: background-color .2s;
-    }
-    .purchase:hover {
-      background-color:#0d605e;
-    }
-
-    section#purchased {
-      height: 100%;
-      width: 100%;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      background: rgba(255,255,255,.9);
-      position: fixed;
-      top: 0;
-      text-align:center;
-    }
-    section#purchased.active {
-      display: flex;
-    }
-
-    @media screen and (min-width: 992px) {
-      .menu ul {
-        grid-template: auto / repeat(3, 1fr);
-      }
-    }
-
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
   <header>
     <div class="logo">
-      <a href="/">
+      <a href="index.html">
         <img src="logo.png" width="150" alt="Beans & Brews logo">
       </a>
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <div class="about">
+    
+    <div class="container container-small">
       <h1>Welcome to Beans & Brews</h1>
-      <p>Beans & Brews is a cozy coffee shop that takes pride in crafting the perfect cup of coffee. With a warm and inviting atmosphere, it's the ideal place to start your day or take a break from the bustling city life. At Beans & Brews, we source the finest coffee beans from around the world and expertly roast them to unlock their full flavors and aromas. Whether you prefer a smooth and creamy latte, a bold and robust espresso, or a delightful flavored brew, our skilled baristas are dedicated to creating a coffee experience that satisfies your palate. Indulge in our carefully curated menu of handcrafted beverages and discover your new favorite coffee at Beans & Brews.</p>
+      <p>Beans & Brews is a cozy coffee shop that takes pride in crafting the perfect cup of coffee. With a warm and
+        inviting atmosphere, it's the ideal place to start your day or take a break from the bustling city life. At
+        Beans & Brews, we source the finest coffee beans from around the world and expertly roast them to unlock their
+        full flavors and aromas. Whether you prefer a smooth and creamy latte, a bold and robust espresso, or a
+        delightful flavored brew, our skilled baristas are dedicated to creating a coffee experience that satisfies your
+        palate. Indulge in our carefully curated menu of handcrafted beverages and discover your new favorite coffee at
+        Beans & Brews.</p>
     </div>
-    <div class="menu">
+
+    <div class="container menu">
       <ul>
         <li class="card">
           <h3>Morning Bliss Blend</h3>
-          <img src="https://cdn.discordapp.com/attachments/989943876548689930/1115664479062085652/IDBC_product_photography_of_a_cup_of_coffee_1_11769613-dad0-40ad-b443-d243e525b342.png" width="450" alt="Morning Bliss Blend">
+          <img
+            src="https://cdn.discordapp.com/attachments/989943876548689930/1115664479062085652/IDBC_product_photography_of_a_cup_of_coffee_1_11769613-dad0-40ad-b443-d243e525b342.png"
+            width="450" alt="Morning Bliss Blend">
           <p>Delicious coffee with a rich aroma.</p>
           <span class="price">$3.99</span>
-          <button class="purchase">Purchase</button>
+          <button class="btn">Purchase</button>
         </li>
         <li class="card">
           <h3>Bold Awakening Roast</h3>
-          <img src="https://cdn.discordapp.com/attachments/989943876548689930/1115664479368249507/IDBC_product_photography_of_a_cup_of_coffee_2_11769613-dad0-40ad-b443-d243e525b342.png" width="450" alt="Bold Awakening Roast">
+          <img
+            src="https://cdn.discordapp.com/attachments/989943876548689930/1115664479368249507/IDBC_product_photography_of_a_cup_of_coffee_2_11769613-dad0-40ad-b443-d243e525b342.png"
+            width="450" alt="Bold Awakening Roast">
           <p>A strong and bold coffee blend.</p>
           <span class="price">$4.99</span>
-          <button class="purchase">Purchase</button>
+          <button class="btn">Purchase</button>
         </li>
         <li class="card">
           <h3>Caramel Delight Latte</h3>
-          <img src="https://cdn.discordapp.com/attachments/989943876548689930/1115664478743302174/IDBC_product_photography_of_a_cup_of_coffee_0_11769613-dad0-40ad-b443-d243e525b342.png" width="450" alt="Caramel Delight Latte">
+          <img
+            src="https://cdn.discordapp.com/attachments/989943876548689930/1115664478743302174/IDBC_product_photography_of_a_cup_of_coffee_0_11769613-dad0-40ad-b443-d243e525b342.png"
+            width="450" alt="Caramel Delight Latte">
           <p>A smooth and creamy coffee with a hint of caramel.</p>
           <span class="price">$5.99</span>
-          <button class="purchase">Purchase</button>
+          <button class="btn">Purchase</button>
         </li>
       </ul>
     </div>
+
   </main>
+
   <section id="purchased">
     <h1>Thank You For Your Purchase!</h1>
     <button class="close">Close</button>
   </section>
+
   <footer>
     <p>© 2023 Beans & Brews. All rights reserved.</p>
   </footer>
 
-  <script>
-    function showHidePurchased() {
-      const purchasedScreen = document.querySelector('#purchased');
-      if (purchasedScreen.classList.contains('active')) {
-        purchasedScreen.classList.remove('active');
-      } else {
-        purchasedScreen.classList.add('active');
-      }
-    }
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach(button => {
-      button.addEventListener('click', function() {
-        console.log('working')
-        showHidePurchased();
-      })
-    })
-
-  </script>
+  <script src="scripts.js"></script>
 </body>
+
 </html>
